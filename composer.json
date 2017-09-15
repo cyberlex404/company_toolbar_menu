@@ -1,0 +1,14 @@
+{
+  "name": "cyberlex404/company_toolbar_menu",
+  "type": "drupal-module",
+  "description": "Custom item for admin menu",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/company_toolbar_menu",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/company_toolbar_menu",
+    "source": "http://cgit.drupalcode.org/company_toolbar_menu"
+  },
+  "require": { }
+}

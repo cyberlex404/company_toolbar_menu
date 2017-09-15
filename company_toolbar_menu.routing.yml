@@ -1,0 +1,23 @@
+cat.company:
+  path: '/admin/company'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Company'
+  requirements:
+    _permission: 'access administration pages'
+
+cat.company_content:
+  path: '/admin/company/content'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Content'
+  requirements:
+    _permission: 'access administration pages'
+
+cat.company_structure:
+  path: '/admin/company/structure'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Structure'
+  requirements:
+    _permission: 'access administration pages'

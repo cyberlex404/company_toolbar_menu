@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains company_toolbar_menu.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+/*
+function company_toolbar_menu_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the company_toolbar_menu module.
+    case 'help.page.company_toolbar_menu':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+*/
+/**
+ * Implements hook_library_info_alter().
+ */
+function company_toolbar_menu_library_info_alter(&$libraries, $extension) {
+  $path = '/' . drupal_get_path('module', 'company_toolbar_menu') . '/assets/company-icon.css';
+  if ($extension == 'admin_toolbar' && isset($libraries['toolbar.tree'])) {
+
+    $libraries['toolbar.tree']['css']['theme'][$path] = [];
+  }
+}

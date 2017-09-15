@@ -1,0 +1,20 @@
+cat.company:
+  title: 'Company'
+  description: 'Company admin pages'
+  route_name: cat.company
+  weight: -10
+  parent: system.admin
+
+cat.company_content:
+  title: 'Content'
+  description: 'Custom content section'
+  route_name: cat.company_content
+  weight: 1
+  parent: cat.company
+
+cat.company_structure:
+  title: 'Structure'
+  description: 'Custom structure section'
+  route_name: cat.company_structure
+  weight: 10
+  parent: cat.company
